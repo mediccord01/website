@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mediccord</title>
+<meta name="description" content="Mediccord: one trusted health record for the whole family. Launching 2027.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 48'%3E%3Cpath d='M21 2 39 9v14c0 11-8 19-18 23C11 42 3 34 3 23V9z' fill='%230b1229' stroke='%23d4ad3a' stroke-width='3'/%3E%3Cpath d='M12 25h5l3-6 4 11 3-5h4' fill='none' stroke='%23d4ad3a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+/* Holding page. No cookies, no trackers, no outside fonts or scripts. */
+:root{
+  --bg:#0b1229; --bg2:#141d3b; --ink:#f5f2ea; --muted:#a3abc2; --gold:#d4ad3a; --line:rgba(212,173,58,.35);
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:radial-gradient(120% 80% at 80% 0%,#1a2550 0%,var(--bg) 60%);color:var(--ink);font-family:var(--sans);line-height:1.55;
+  display:flex;flex-direction:column;min-height:100%;
+  padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+main{flex:1;display:flex;align-items:center;justify-content:center;padding-block:48px}
+.card{max-width:640px;width:100%}
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:40px}
+.brand svg{width:44px;height:50px;flex:none}
+.brand span{font-size:28px;font-weight:700;letter-spacing:.01em}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.08;margin:0 0 18px;font-weight:750;text-wrap:balance;letter-spacing:-.01em}
+h1 em{font-style:normal;color:var(--gold)}
+p.lead{font-size:clamp(17px,2.4vw,20px);color:var(--muted);margin:0 0 36px;max-width:52ch}
+.status{display:inline-block;border:1px solid var(--line);color:var(--gold);border-radius:99px;padding:6px 14px;font-size:14px;font-weight:600;letter-spacing:.04em;margin-bottom:28px}
+.contact{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;font-size:16px;color:var(--muted)}
+.contact a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--line)}
+.contact a:hover,.contact a:focus-visible{border-bottom-color:var(--gold);outline:none}
+footer{padding-block:24px;font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <div class="brand">
+      <svg viewBox="0 0 42 48" aria-hidden="true"><path d="M21 2 39 9v14c0 11-8 19-18 23C11 42 3 34 3 23V9z" fill="none" stroke="#d4ad3a" stroke-width="3"/><path d="M12 25h5l3-6 4 11 3-5h4" fill="none" stroke="#d4ad3a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Mediccord</span>
+    </div>
+    <div class="status">Launching 2027</div>
+    <h1>One trusted health record for the <em>whole family</em>.</h1>
+    <p class="lead">Adults and children, in one secure place. Starting in Nigeria.</p>
+    <p class="contact">Clinics, partners and press: <a href="mailto:info@mediccord.com">info@mediccord.com</a></p>
+  </div>
+</main>
+<footer>
+  <span>&copy; 2026 Mediccord</span>
+  <span>This page sets no cookies and collects no personal data.</span>
+</footer>
+</body>
+</html>
